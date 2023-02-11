@@ -1,0 +1,10 @@
+---
+# Remote Control Using Ansible
+- name: Exercise for setting up a webserver in EC2
+  hosts: all
+  user: ubuntu
+  become: true
+  become_method: sudo
+  become_user: root
+  roles:
+  - setup
